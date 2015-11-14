@@ -459,56 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6cb9c9abb8240a5b4582a57e4ecf1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1020737026
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.68349981
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.2888999
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 7.0999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 438160, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 169884, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 134546, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1401326830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,3 +1753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ac165b4889446398805076df2095c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: c488c4451e52c487ba3161e893f84948, type: 3}
+  cursorMode: 1
+  hotSpot: {x: 32, y: 60}

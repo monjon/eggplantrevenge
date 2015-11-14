@@ -10,7 +10,7 @@ public class LaserController : MonoBehaviour {
 		line = gameObject.GetComponent<LineRenderer>();
 		line.enabled = false;
 		
-		Cursor.visible = false;	//hide the cursor after placing it in the middle of the screen
+		//  Cursor.visible = false;	//hide the cursor after placing it in the middle of the screen
 	}
 	
 	// Update is called once per frame
