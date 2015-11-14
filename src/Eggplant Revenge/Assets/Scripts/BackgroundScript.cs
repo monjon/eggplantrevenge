@@ -21,6 +21,7 @@ public class BackgroundScript : MonoBehaviour {
 		GameObject instance = null;
 		
 		float sizeX, sizeY;
+		int rndMirror;
 		
 		for (int rank = 0; rank < 3; rank++) {
 			int index = rangeMin;
@@ -32,6 +33,11 @@ public class BackgroundScript : MonoBehaviour {
 				
 				sizeX = Random.Range(.35f, .42f);
 				sizeY = Random.Range(.35f, .42f);
+				// Change building orientation for more randomness
+				rndMirror = Random.Range(0,2);
+				if(rndMirror == 1){
+					sizeX = -sizeX;
+				}
 				
 				instance.transform.localScale = new Vector3 (sizeX, sizeY, .4f);
 				instance.transform.Rotate(0, 0, Random.Range(-10f, 10f));
