@@ -30,15 +30,15 @@ public class BackgroundScript : MonoBehaviour {
 				instance = Instantiate(buildingModel[Random.Range(0, buildingModel.Length)]);
 				instance.transform.parent = parent.transform;
 				
-				sizeX = Random.Range(.5f, 3f);
-				sizeY = Random.Range(3f, 10f);
+				sizeX = Random.Range(.35f, .42f);
+				sizeY = Random.Range(.35f, .42f);
 				
-				instance.transform.localScale = new Vector3 (sizeX, sizeY, 1f);
+				instance.transform.localScale = new Vector3 (sizeX, sizeY, .4f);
 				instance.transform.Rotate(0, 0, Random.Range(-10f, 10f));
 
 				//parent.transform.Translate(index, -2, 4 + rank + Random.Range(0, 0.1f));
-				parent.transform.Translate(index, -2, 4 + rank + (index % 3) * .1f);
-				index += 2;
+				parent.transform.Translate(index, -2, 4 + rank*8 + (index % 3) * 1f);
+				index += 10;
 				
 				buildings.Add(parent);
 			}
