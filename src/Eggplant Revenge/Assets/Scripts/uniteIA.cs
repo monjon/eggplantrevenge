@@ -8,7 +8,7 @@ public class uniteIA : MonoBehaviour {
 	public float rangeMin;
 	public float rangeMax;
 
-	public GameObject kaijuObj;
+	//public GameObject kaijuObj;
 	private Transform kaiju;
 	//  public Transform frontCheck;
 	//  public Transform backCheck;
@@ -23,27 +23,78 @@ public class uniteIA : MonoBehaviour {
 	private const int STATE_LOCKED = 2;
 	private const int STATE_FIRE = 3;
 	private const int STATE_BACK = 4;
+ 
+	private ArmyWaves waves;
+	private float minDist;
 
 	// Use this for initialization
 	void Start () {
+		
+		GameObject kaijuObj = GameObject.Find("Kaiju");
 		kaiju = kaijuObj.transform;
 		state = STATE_MOVE;
 		nextFire = -1;
+
+		GameObject camera = GameObject.Find("Main Camera");
+		waves = camera.GetComponent<ArmyWaves>();
 		
 		distance = ((rangeMax - rangeMin) * (1f - Random.value) + rangeMin); 
-		//  distance = rangeMin;
+		minDist = waves.startDistance - 0.5f;		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-		//bool allyFront = NavMesh.Raycast(transform.position, frontCheck.transform.position, 1 << LayerMask.NameToLayer ("Ally"));
-		//bool allyBack = NavMesh.Raycast (transform.position, backCheck.transform.position, 1 << LayerMask.NameToLayer ("Ally"));
+
 		bool allyBack = false;
 		bool allyFront = false;
-		Debug.Log("State=" + state);
+		
+		// Comparaison
+		Vector3 currentPos = transform.position;
+		Vector3 pos;
+		float dist;
+		
+		for (int i = 0; i < waves.tanks.Count; i++) {
+			pos = waves.tanks[i].transform.position;
+			if (pos.y == currentPos.y && pos.x != currentPos.x) {
+				dist = currentPos.x - pos.x;					
+				if (dist > 0 && dist < minDist) {
+					allyBack = true;
+				} else if (dist < 0 && (minDist + dist) > 0) {
+					allyFront = true;
+				}
+			}
+		}
+		for (int i = 0; i < waves.copters.Count; i++) {
+			pos = waves.copters[i].transform.position;
+			if (pos.y == currentPos.y && pos.x != currentPos.x) {
+				dist = currentPos.x - pos.x;					
+				if (dist > 0 && dist < minDist) {
+					allyBack = true;
+				} else if (dist < 0 && (minDist + dist) > 0) {
+					allyFront = true;
+				}
+			}
+		}
+		for (int i = 0; i < waves.jeeps.Count; i++) {
+			pos = waves.jeeps[i].transform.position;
+			if (pos.y == currentPos.y && pos.x != currentPos.x) {
+				dist = currentPos.x - pos.x;					
+				if (dist > 0 && dist < minDist) {
+					allyBack = true;
+				} else if (dist < 0 && (minDist + dist) > 0) {
+					allyFront = true;
+				}
+			}
+		}		
+		
 		
 		float current = kaiju.position.x - transform.position.x;
+		
+		if (transform.position.x == waves.tanks[0].transform.position.x) {
+			Debug.Log(">>> " + state);
+			Debug.Log(">>> " + current + "/" + rangeMin);
+			
+		}
 		
 		// Machine a etats
 		switch (state) {

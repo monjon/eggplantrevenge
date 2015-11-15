@@ -76,13 +76,13 @@ public class ArmyWaves : MonoBehaviour {
 		for (int i = 0; i < nbTanks; i++) {
 			instance = Instantiate(prefabTank);
 			instance.transform.Translate(startLeft - startDistance * i, -4, kaiju.transform.position.z);
-			copters.Add(instance);
+			tanks.Add(instance);
 		}
 
 		for (int i = 0; i < nbCopters; i++) {
 			instance = Instantiate(prefabCopter);
 			instance.transform.Translate(startLeft - startDistance * i, 6, kaiju.transform.position.z);
-			tanks.Add(instance);
+			copters.Add(instance);
 		}
 
 		for (int i = 0; i < nbJeeps; i++) {
