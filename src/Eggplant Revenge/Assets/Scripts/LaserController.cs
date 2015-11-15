@@ -27,6 +27,7 @@ public class LaserController : MonoBehaviour {
 			if(cible != null){
 				//  cible.SetActive(false);
 				Destroy(cible);
+				GameController.score++;
 			}
 		}
 	}
