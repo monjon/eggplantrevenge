@@ -8,14 +8,30 @@ public class GameController : MonoBehaviour {
 	
 	public static int score;
 	
+	private ArmyWaves waves;
+	
+	public float reloadWave;
+	private bool previous;
+	private float nextWave;
+	
 	// Use this for initialization
 	void Start () {
 		Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
 		score = 0;
+		
+		waves = GetComponent<ArmyWaves>();
+		previous = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (waves.isWaveFinished && !previous) {
+			nextWave = Time.time + reloadWave;
+		}
+		previous = waves.isWaveFinished;
+		
+		if (waves.isWaveFinished && Time.time > nextWave) {
+			waves.newWave();
+		}
 	}
 }
