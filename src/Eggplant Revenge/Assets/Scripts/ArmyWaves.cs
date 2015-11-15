@@ -38,7 +38,7 @@ public class ArmyWaves : MonoBehaviour {
 		nbCopters = 0;
 		nbJeeps = -2;
 		
-		//newWave();
+		newWave();
 	}
 	
 	// Update is called once per frame

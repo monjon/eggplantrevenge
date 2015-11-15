@@ -8,7 +8,8 @@ public class uniteIA : MonoBehaviour {
 	public float rangeMin;
 	public float rangeMax;
 
-	public Transform kaiju;
+	public GameObject kaijuObj;
+	private Transform kaiju;
 	//  public Transform frontCheck;
 	//  public Transform backCheck;
 	public bool fireInTheHole;
@@ -25,6 +26,7 @@ public class uniteIA : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		kaiju = kaijuObj.transform;
 		state = STATE_MOVE;
 		nextFire = -1;
 		
