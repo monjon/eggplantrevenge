@@ -43,7 +43,7 @@ public class BackgroundScript : MonoBehaviour {
 				instance.transform.Rotate(0, 0, Random.Range(-10f, 10f));
 
 				//parent.transform.Translate(index, -2, 4 + rank + Random.Range(0, 0.1f));
-				parent.transform.Translate(index, -2, 4 + rank*8 + (index % 3) * 1f);
+				parent.transform.Translate(index, -4, 10 + rank*8 + (index % 3) * 1f);
 				index += 10;
 				
 				buildings.Add(parent);

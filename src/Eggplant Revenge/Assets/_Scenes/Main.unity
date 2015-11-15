@@ -494,12 +494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0496e174aaa4858857941805fae3e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeMin: -30
-  rangeMax: 30
+  rangeMin: -50
+  rangeMax: 50
   buildingModel:
-  - {fileID: 169884, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-  - {fileID: 169884, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
-  - {fileID: 169884, guid: 9d012d3556d1d48ffa57e6a4217b8d7b, type: 2}
+  - {fileID: 100000, guid: d4aea9a47793642e1b40dbc2b6fd1906, type: 3}
+  - {fileID: 100000, guid: c5ca14a7164be404bb6df0828f476664, type: 3}
+  - {fileID: 100000, guid: 115ad91325f344e329e39748a5a83b68, type: 3}
 --- !u!23 &931164899
 MeshRenderer:
   m_ObjectHideFlags: 0
