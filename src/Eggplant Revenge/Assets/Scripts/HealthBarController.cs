@@ -26,6 +26,8 @@ public class HealthBarController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if(barDisplay <= 0f){
+			Application.LoadLevel ("GameOver"); 
+		}
 	}
 }
