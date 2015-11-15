@@ -31,12 +31,26 @@ public class ArmyWaves : MonoBehaviour {
 	int nbJeeps;
 	
 	public bool isWaveFinished;
+	
+	private float[] lines;
+
+	private float[] height;
 
 	// Use this for initialization
 	void Start () {
 		nbTanks = 2;
 		nbCopters = 0;
 		nbJeeps = -2;
+		
+		lines = new float[3];
+		lines[0] = kaiju.transform.position.z;
+		lines[1] = kaiju.transform.position.z - 0.2f;
+		lines[2] = kaiju.transform.position.z + 0.2f;
+		
+		height = new float[3];
+		height[0] = 2.5f;
+		height[1] = 4f;
+		height[2] = 5.5f;
 	}
 	
 	// Update is called once per frame
@@ -73,19 +87,19 @@ public class ArmyWaves : MonoBehaviour {
 		GameObject instance;
 		for (int i = 0; i < nbTanks; i++) {
 			instance = Instantiate(prefabTank);
-			instance.transform.Translate(startLeft - startDistance * i, -4, kaiju.transform.position.z);
+			instance.transform.Translate(startLeft - startDistance * i, -4, lines[Random.Range(0, lines.Length)]);
 			tanks.Add(instance);
 		}
 
 		for (int i = 0; i < nbCopters; i++) {
 			instance = Instantiate(prefabCopter);
-			instance.transform.Translate(startLeft - startDistance * i, 6, kaiju.transform.position.z);
+			instance.transform.Translate(startLeft - startDistance * i, height[Random.Range(0, height.Length)], lines[Random.Range(0, lines.Length)]);
 			copters.Add(instance);
 		}
 
 		for (int i = 0; i < nbJeeps; i++) {
 			instance = Instantiate(prefabJeep);
-			instance.transform.Translate(startRight + startDistance * i, -4, kaiju.transform.position.z);
+			instance.transform.Translate(startRight + startDistance * i, -4, lines[Random.Range(0, lines.Length)]);
 			jeeps.Add(instance);
 		}
 		
