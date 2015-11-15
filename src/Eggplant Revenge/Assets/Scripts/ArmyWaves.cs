@@ -37,8 +37,6 @@ public class ArmyWaves : MonoBehaviour {
 		nbTanks = 2;
 		nbCopters = 0;
 		nbJeeps = -2;
-		
-		newWave();
 	}
 	
 	// Update is called once per frame
@@ -63,14 +61,14 @@ public class ArmyWaves : MonoBehaviour {
 	}
 	
 	public void newWave() {
-		tanks = new List<GameObject>();
-		copters = new List<GameObject>();
-		jeeps = new List<GameObject>();
+		//  tanks = new List<GameObject>();
+		//  copters = new List<GameObject>();
+		//  jeeps = new List<GameObject>();
 		
 		waves++;
 		nbTanks += enemyIncrease;
 		nbCopters += enemyIncrease;
-		nbJeeps += enemyIncrease;
+		//nbJeeps += enemyIncrease;
 		
 		GameObject instance;
 		for (int i = 0; i < nbTanks; i++) {
