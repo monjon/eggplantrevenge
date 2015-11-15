@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 6af3da3b7cec01a4ab8e094070d1026f
+timeCreated: 1447595557
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - monsterExplosion: {fileID: 8300000, guid: 9714807943a5ddd409f9329f6b530011, type: 3}
+  - monsterWalk1: {fileID: 8300000, guid: c4cd73ac50c248c49947788d1c3a2289, type: 3}
+  - monsterWalk2: {fileID: 8300000, guid: ce09c84efc25a0f40a437cc4cf3879a5, type: 3}
+  - laser: {fileID: 8300000, guid: edeeffe83994d5b4190cc02daecb2990, type: 3}
+  - monsterCry1: {fileID: 8300000, guid: b6cd165081b6b98449be29cadade8b58, type: 3}
+  - monsterCry2: {fileID: 8300000, guid: d18d6dd38e3852d4096183325a092093, type: 3}
+  - monsterCry3: {fileID: 8300000, guid: 7b90af15ef34e064bb4835f29b25246b, type: 3}
+  - helicoMove: {fileID: 8300000, guid: e41e06a4b0fea6346967e44e61d1d96e, type: 3}
+  - helicoExplosion: {fileID: 8300000, guid: 803e25df7ee527448be555044b717335, type: 3}
+  - helicoFall: {fileID: 8300000, guid: c5325551d75eb2e4cb47af99830acfcd, type: 3}
+  - helicoFire: {fileID: 8300000, guid: 975ae73704741a54eaf2237b5b43bcfd, type: 3}
+  - tankMove: {fileID: 8300000, guid: 645a0c726ec21454eb8535b8ff4abb52, type: 3}
+  - tankExplosion: {fileID: 8300000, guid: 803e25df7ee527448be555044b717335, type: 3}
+  - tankStop: {fileID: 8300000, guid: 9846996060afd6e45ac728e57af0ffa8, type: 3}
+  - tankReady: {fileID: 8300000, guid: d0e632666a6c5a644a12f93e6f187819, type: 3}
+  - tankFire: {fileID: 8300000, guid: 1ce32c3cf8eb80743a6925563ada35f5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
