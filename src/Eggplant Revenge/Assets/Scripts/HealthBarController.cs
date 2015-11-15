@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class HealthBarController : MonoBehaviour {
-	public float barDisplay; //current progress
+	public static float barDisplay; //current progress
 	public Vector2 pos = new Vector2(20,40);
 	public Vector2 size = new Vector2(60,20);
 	public Texture2D emptyTex;

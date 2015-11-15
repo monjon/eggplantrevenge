@@ -156,7 +156,8 @@ public class uniteIA : MonoBehaviour {
 					
 					// TODO : C'est là qu'on lance le tir
 					fireInTheHole = true;
-					
+					Debug.Log("aie");
+					HealthBarController.barDisplay -= 0.1f;
 				} 
 			break;
 			default:

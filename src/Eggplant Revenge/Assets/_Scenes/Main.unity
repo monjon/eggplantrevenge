@@ -1376,7 +1376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f50056f104d4ca79fc9077e18038ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barDisplay: 0
   pos: {x: 440, y: 15}
   size: {x: 88, y: 20}
   emptyTex: {fileID: 2800000, guid: 55a805c4426df4d12964443d1a3713d2, type: 3}
