@@ -26,6 +26,10 @@ public class uniteIA : MonoBehaviour {
  
 	private ArmyWaves waves;
 	private float minDist;
+	
+	public static bool showDamage = false;
+	
+	private GameObject explosionKaiju;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +41,8 @@ public class uniteIA : MonoBehaviour {
 
 		GameObject camera = GameObject.Find("Main Camera");
 		waves = camera.GetComponent<ArmyWaves>();
+		
+		//  explosionKaiju = GameObject.Find("Explosion").GetComponent<KaijuHeadController>();
 		
 		distance = ((rangeMax - rangeMin) * (1f - Random.value) + rangeMin); 
 		minDist = waves.startDistance - 0.5f;		
@@ -146,9 +152,11 @@ public class uniteIA : MonoBehaviour {
 		switch (state) {
 			case STATE_MOVE:
 				gameObject.transform.position += Vector3.right * speed * Time.deltaTime;
+				showDamage = false;
 			break;
 			case STATE_BACK:
 				gameObject.transform.position += Vector3.left * speed * Time.deltaTime;
+				showDamage = false;
 			break;
 			case STATE_FIRE:
 				if (nextFire == -1) {
@@ -156,11 +164,12 @@ public class uniteIA : MonoBehaviour {
 					
 					// TODO : C'est là qu'on lance le tir
 					fireInTheHole = true;
-					Debug.Log("aie");
+					showDamage = true;
 					HealthBarController.barDisplay -= 0.1f;
 				} 
 			break;
 			default:
+				showDamage = false;
 			break;
 		}		
 	}

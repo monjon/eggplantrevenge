@@ -2448,6 +2448,64 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!1001 &1554183130
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1782814909}
+    m_Modifications:
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .0729999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .156000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: .432000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -.999753356
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .0222112834
+      objectReference: {fileID: 0}
+    - target: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 19870726, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19842224, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19840586, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 121650, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1692847891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2565,7 @@ Transform:
   m_Children:
   - {fileID: 1195198226}
   - {fileID: 2012752024}
+  - {fileID: 1930457511}
   m_Father: {fileID: 809785326}
   m_RootOrder: 0
 --- !u!95 &1782814910
@@ -2652,6 +2711,25 @@ MonoBehaviour:
   copters: []
   jeeps: []
   isWaveFinished: 0
+--- !u!1 &1930457510 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 121650, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+  m_PrefabInternal: {fileID: 1554183130}
+--- !u!4 &1930457511 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 497766, guid: 5ec6046e92240b947ac216f90eb6d318, type: 2}
+  m_PrefabInternal: {fileID: 1554183130}
+--- !u!114 &1930457514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930457510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b30c991b5b31479ba357aeaa5c1e6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2012752023
 GameObject:
   m_ObjectHideFlags: 0
