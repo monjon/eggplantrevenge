@@ -41,7 +41,7 @@ public class uniteIA : MonoBehaviour {
 		//bool allyBack = NavMesh.Raycast (transform.position, backCheck.transform.position, 1 << LayerMask.NameToLayer ("Ally"));
 		bool allyBack = false;
 		bool allyFront = false;
-		Debug.Log("State=" + state);
+		//  Debug.Log("State=" + state);
 		
 		float current = kaiju.position.x - transform.position.x;
 		
