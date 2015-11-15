@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 445744}
   - 95: {fileID: 9599090}
   - 114: {fileID: 11442478}
+  - 65: {fileID: 6514932}
   m_Layer: 0
   m_Name: tank
   m_TagString: Untagged
@@ -151,6 +152,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193422}
   m_Mesh: {fileID: 4300002, guid: b89528fe0d88b4a7b83f6de3d9b5d29f, type: 3}
+--- !u!65 &6514932
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.12112808, y: 3.39324808, z: 3.70933175}
+  m_Center: {x: .834883332, y: 1.19662416, z: -.00242292881}
 --- !u!95 &9599090
 Animator:
   serializedVersion: 3
@@ -183,7 +196,6 @@ MonoBehaviour:
   fireRate: 3
   rangeMin: 15
   rangeMax: 20
-  kaijuObj: {fileID: 190734, guid: c2675f5307d9a4915bcc933c3ffdda97, type: 2}
   fireInTheHole: 0
 --- !u!1001 &100100000
 Prefab:

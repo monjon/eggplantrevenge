@@ -111,6 +111,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455638}
   - 95: {fileID: 9500142}
+  - 65: {fileID: 6522620}
   m_Layer: 0
   m_Name: jeep
   m_TagString: Untagged
@@ -394,6 +395,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175940}
   m_Mesh: {fileID: 4300002, guid: bcd5084123aa34302bff4dbd71127e36, type: 3}
+--- !u!65 &6522620
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.82362843, y: 2.52643824, z: 1.97464728}
+  m_Center: {x: -.0183200836, y: 1.17511511, z: -.0384922326}
 --- !u!95 &9500142
 Animator:
   serializedVersion: 3

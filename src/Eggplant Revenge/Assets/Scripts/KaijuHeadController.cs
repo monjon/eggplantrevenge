@@ -5,6 +5,7 @@ using System.Collections;
 public class KaijuHeadController : MonoBehaviour {
 
 	private Vector3 rotationVector;
+	public Vector3 point;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +21,7 @@ public class KaijuHeadController : MonoBehaviour {
 		
 		float enter; 
 		xy.Raycast(ray, out enter);
-		Vector3 point = ray.GetPoint(enter);
+		point = ray.GetPoint(enter);
 		
 		float dx = point.x - transform.position.x;
 		float dy = point.y - transform.position.y;
@@ -34,6 +35,6 @@ public class KaijuHeadController : MonoBehaviour {
 		rotationVector.z = angle;//180f / angle;
 		transform.rotation = Quaternion.Euler(rotationVector);
 
-
 	}
+	
 }

@@ -90,12 +90,6 @@ public class uniteIA : MonoBehaviour {
 		
 		float current = kaiju.position.x - transform.position.x;
 		
-		if (transform.position.x == waves.tanks[0].transform.position.x) {
-			Debug.Log(">>> " + state);
-			Debug.Log(">>> " + current + "/" + rangeMin);
-			
-		}
-		
 		// Machine a etats
 		switch (state) {
 

@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 477736}
   - 95: {fileID: 9565150}
   - 114: {fileID: 11430490}
+  - 65: {fileID: 6560258}
   m_Layer: 0
   m_Name: helicopter
   m_TagString: Untagged
@@ -212,6 +213,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195390}
   m_Mesh: {fileID: 4300002, guid: 84232f8ab9f5640bebd73db71b65086c, type: 3}
+--- !u!65 &6560258
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.6228323, y: 4.06515837, z: 7.72499371}
+  m_Center: {x: .426314324, y: 1.53257906, z: .366440713}
 --- !u!95 &9565150
 Animator:
   serializedVersion: 3
@@ -244,7 +257,6 @@ MonoBehaviour:
   fireRate: 3
   rangeMin: 10
   rangeMax: 15
-  kaijuObj: {fileID: 190734, guid: c2675f5307d9a4915bcc933c3ffdda97, type: 2}
   fireInTheHole: 0
 --- !u!1001 &100100000
 Prefab:
