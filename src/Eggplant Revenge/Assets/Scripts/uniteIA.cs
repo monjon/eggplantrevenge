@@ -18,6 +18,9 @@ public class uniteIA : MonoBehaviour {
 	private float nextFire;
 	private float distance;
 	
+	private AudioSource playerSound;
+	private AudioClip sound;
+	
 	private const int STATE_MOVE = 0;
 	private const int STATE_READY = 1;
 	private const int STATE_LOCKED = 2;
@@ -39,6 +42,8 @@ public class uniteIA : MonoBehaviour {
 		state = STATE_MOVE;
 		nextFire = -1;
 
+		//  playerSound = gameObject.GetComponent<"AudioSource">();
+		
 		GameObject camera = GameObject.Find("Main Camera");
 		waves = camera.GetComponent<ArmyWaves>();
 		
@@ -165,6 +170,7 @@ public class uniteIA : MonoBehaviour {
 					// TODO : C'est là qu'on lance le tir
 					fireInTheHole = true;
 					showDamage = true;
+					
 					HealthBarController.barDisplay -= 0.1f;
 				} 
 			break;
