@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour {
 	
 	public static int score;
 	
+	public GameObject kaiju;
+	
 	private ArmyWaves waves;
 	
 	public float reloadWave;

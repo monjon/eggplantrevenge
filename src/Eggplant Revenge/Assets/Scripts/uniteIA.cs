@@ -8,6 +8,8 @@ public class uniteIA : MonoBehaviour {
 	public float rangeMin;
 	public float rangeMax;
 
+	public int resistance;
+
 	//public GameObject kaijuObj;
 	private Transform kaiju;
 	//  public Transform frontCheck;
@@ -66,8 +68,8 @@ public class uniteIA : MonoBehaviour {
 		
 		for (int i = 0; i < waves.tanks.Count; i++) {
 			pos = waves.tanks[i].transform.position;
-			if (pos.y == currentPos.y && pos.x != currentPos.x) {
-				dist = currentPos.x - pos.x;					
+			if (pos.y == currentPos.y && pos.z == currentPos.z && pos.x != currentPos.x) {
+				dist = currentPos.x - pos.x;
 				if (dist > 0 && dist < minDist) {
 					allyBack = true;
 				} else if (dist < 0 && (minDist + dist) > 0) {
@@ -77,8 +79,8 @@ public class uniteIA : MonoBehaviour {
 		}
 		for (int i = 0; i < waves.copters.Count; i++) {
 			pos = waves.copters[i].transform.position;
-			if (pos.y == currentPos.y && pos.x != currentPos.x) {
-				dist = currentPos.x - pos.x;					
+			if (pos.y == currentPos.y && pos.z == currentPos.z && pos.x != currentPos.x) {
+				dist = currentPos.x - pos.x;
 				if (dist > 0 && dist < minDist) {
 					allyBack = true;
 				} else if (dist < 0 && (minDist + dist) > 0) {
@@ -88,8 +90,8 @@ public class uniteIA : MonoBehaviour {
 		}
 		for (int i = 0; i < waves.jeeps.Count; i++) {
 			pos = waves.jeeps[i].transform.position;
-			if (pos.y == currentPos.y && pos.x != currentPos.x) {
-				dist = currentPos.x - pos.x;					
+			if (pos.y == currentPos.y && pos.z == currentPos.z && pos.x != currentPos.x) {
+				dist = currentPos.x - pos.x;
 				if (dist > 0 && dist < minDist) {
 					allyBack = true;
 				} else if (dist < 0 && (minDist + dist) > 0) {

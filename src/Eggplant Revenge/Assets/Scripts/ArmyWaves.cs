@@ -44,8 +44,8 @@ public class ArmyWaves : MonoBehaviour {
 		
 		lines = new float[3];
 		lines[0] = kaiju.transform.position.z;
-		lines[1] = kaiju.transform.position.z - 0.2f;
-		lines[2] = kaiju.transform.position.z + 0.2f;
+		lines[1] = kaiju.transform.position.z - 2f;
+		lines[2] = kaiju.transform.position.z + 2f;
 		
 		height = new float[3];
 		height[0] = 2.5f;

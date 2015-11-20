@@ -15,19 +15,22 @@ public class LaserController : MonoBehaviour {
 		
 		head = GameObject.Find("LaserOrientation").GetComponent<KaijuHeadController>();
 		waves = GameObject.Find("Main Camera").GetComponent<ArmyWaves>();
-		//  Cursor.visible = false;	//hide the cursor after placing it in the middle of the screen
+		//  Cursor.visible = false;	//hide the cursor after placing it in the middle of the screen		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown("Fire1")){
+		if(Input.GetButton("Fire1")){
 			StopCoroutine("FireLaser");
 			StartCoroutine("FireLaser");
 			GameObject cible = CheckCollision();
 			if(cible != null){
 				//  cible.SetActive(false);
-				Destroy(cible);
-				GameController.score++;
+				
+				if (cible.GetComponent<uniteIA>().resistance <= 0) {
+					Destroy(cible);
+					GameController.score++;
+				}
 			}
 		}
 	}
@@ -66,38 +69,52 @@ public class LaserController : MonoBehaviour {
 		GameObject cible = null;
 		
 		foreach (GameObject tank in waves.tanks) {
-			if(tank != null){
-				if (tank.GetComponent<Collider>().bounds.Contains(head.point)){
-					cible = tank;
-					break;
+			if(tank != null) {
+				for (int i = 0; i < 3; i++) {
+					if (tank.GetComponent<Collider>().bounds.Contains(head.points[i])){
+						cible = tank;
+						break;
+					}
 				}
 			}
 		}
 		
 		if (cible != null) {
-			waves.tanks.Remove(cible);
+			uniteIA unit = cible.GetComponent<uniteIA>();
+			unit.resistance--;
+			if (unit.resistance <= 0) {
+				waves.tanks.Remove(cible);
+			}
 			return cible;
 		}
 		
 		foreach (GameObject copter in waves.copters) {
 			if(copter != null){
-				if (copter.GetComponent<Collider>().bounds.Contains(head.point)){
-					cible = copter;
-					break;
+				for (int i = 0; i < 3; i++) {
+					if (copter.GetComponent<Collider>().bounds.Contains(head.points[i])){
+						cible = copter;
+						break;
+					}
 				}
 			}
 		}
 		
 		if (cible != null) {
-			waves.copters.Remove(cible);
+			uniteIA unit = cible.GetComponent<uniteIA>();
+			unit.resistance--;
+			if (unit.resistance <= 0) {
+				waves.copters.Remove(cible);
+			}			
 			return cible;
 		}
 		
 		foreach (GameObject jeep in waves.jeeps) {
 			if(jeep != null){
-				if (jeep.GetComponent<Collider>().bounds.Contains(head.point)){
-					cible = jeep;
-					break;
+				for (int i = 0; i < 3; i++) {
+					if (jeep.GetComponent<Collider>().bounds.Contains(head.points[i])){
+						cible = jeep;
+						break;
+					}
 				}
 			}
 		}
