@@ -1591,7 +1591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6cb9c9abb8240a5b4582a57e4ecf1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  point: {x: 0, y: 0, z: 0}
+  points: []
 --- !u!1 &679426094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,8 +2932,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1815659573}
-  m_LocalRotation: {x: .167217016, y: 0, z: 0, w: .985920131}
-  m_LocalPosition: {x: 0, y: 8.60000038, z: -16.1000004}
+  m_LocalRotation: {x: .130526215, y: 0, z: 0, w: .991444886}
+  m_LocalPosition: {x: 0, y: 8, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2952,6 +2952,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: c488c4451e52c487ba3161e893f84948, type: 3}
   cursorMode: 1
   hotSpot: {x: 32, y: 35}
+  kaiju: {fileID: 0}
   reloadWave: 0
 --- !u!114 &1815659580
 MonoBehaviour:
@@ -2965,7 +2966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyIncrease: 1
-  startLeft: -20
+  startLeft: -30
   startRight: 30
   startDistance: 5
   kaiju: {fileID: 809785325}

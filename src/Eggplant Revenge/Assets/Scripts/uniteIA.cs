@@ -20,6 +20,9 @@ public class uniteIA : MonoBehaviour {
 	private float nextFire;
 	private float distance;
 	
+	// Chute
+	private float down;
+	
 	private AudioSource playerSound;
 	private AudioClip sound;
 	
@@ -39,6 +42,11 @@ public class uniteIA : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
+		// Securite
+		if (resistance == 0) {
+			resistance = 1;
+		}
+		
 		GameObject kaijuObj = GameObject.Find("Kaiju");
 		kaiju = kaijuObj.transform;
 		state = STATE_MOVE;
@@ -57,6 +65,16 @@ public class uniteIA : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (resistance <= 0) {
+			down += 0.05f;
+			transform.Translate(0, -down, 0); 
+
+			if (transform.position.y < -4) {
+				Destroy(gameObject);
+				return;
+			}
+		}
 
 		bool allyBack = false;
 		bool allyFront = false;

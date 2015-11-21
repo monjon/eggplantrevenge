@@ -28,7 +28,6 @@ public class LaserController : MonoBehaviour {
 				//  cible.SetActive(false);
 				
 				if (cible.GetComponent<uniteIA>().resistance <= 0) {
-					Destroy(cible);
 					GameController.score++;
 				}
 			}
