@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 5de1766319db04796ad4f363c2b238e2
+timeCreated: 1448631305
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Box002
+    100004: CTRLERRR
+    100006: //RootNode
+    100008: EggplantOfTheDead_01_Box002
+    100010: Head
+    100012: HIPS
+    100014: ikHandle1
+    100016: ikHandle2
+    100018: L_Leg_CTRLER
+    100020: locator1
+    100022: locator2
+    100024: Mouth1
+    100026: Mouth2
+    100028: pPlane1
+    100030: R_Leg_CTRLER
+    100032: Rfeet
+    100034: Rfeet_001
+    100036: Rknee
+    100038: Rknee_001
+    100040: RLeg
+    100042: RLeg_001
+    100044: ROOT
+    100046: Rtooth
+    100048: Rtooth_001
+    100050: Spine_01
+    100052: Spine_02
+    100054: Tale_01
+    100056: Tale_02
+    100058: Tale_03
+    400000: Armature
+    400002: Box002
+    400004: CTRLERRR
+    400006: //RootNode
+    400008: EggplantOfTheDead_01_Box002
+    400010: Head
+    400012: HIPS
+    400014: ikHandle1
+    400016: ikHandle2
+    400018: L_Leg_CTRLER
+    400020: locator1
+    400022: locator2
+    400024: Mouth1
+    400026: Mouth2
+    400028: pPlane1
+    400030: R_Leg_CTRLER
+    400032: Rfeet
+    400034: Rfeet_001
+    400036: Rknee
+    400038: Rknee_001
+    400040: RLeg
+    400042: RLeg_001
+    400044: ROOT
+    400046: Rtooth
+    400048: Rtooth_001
+    400050: Spine_01
+    400052: Spine_02
+    400054: Tale_01
+    400056: Tale_02
+    400058: Tale_03
+    2300000: pPlane1
+    3300000: pPlane1
+    4300000: Box002
+    4300002: pPlane1
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: Box002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

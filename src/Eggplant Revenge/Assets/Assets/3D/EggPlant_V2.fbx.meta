@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: 6116bc33300784628ad706b84a933640
+timeCreated: 1448631354
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: EggplantOfTheDead
+    100004: Head
+    100006: HIPS
+    100008: L_feet01_IK
+    100010: L_feet02_IK
+    100012: L_Leg_IK
+    100014: L_rfl_ankle_IT
+    100016: L_rfl_Ball_IT
+    100018: L_rfl_heel_IT
+    100020: L_rfl_toe_IT
+    100022: L_ToothEnd
+    100024: Lfeet
+    100026: Lknee
+    100028: LLeg
+    100030: Ltooth
+    100032: Mouth1
+    100034: Mouth2
+    100036: R_feet01_IK
+    100038: R_feet02_IK
+    100040: R_Leg_IK
+    100042: R_rfl_ankle_IT
+    100044: R_rfl_Ball_IT
+    100046: R_rfl_heel_IT
+    100048: R_rfl_toe_IT
+    100050: R_ToothEnd
+    100052: Rfeet
+    100054: Rknee
+    100056: ROOT
+    100058: RReg
+    100060: Rtooth
+    100062: Spine_01
+    100064: Spine_02
+    100066: Tale_01
+    100068: Tale_02
+    100070: Tale_03
+    100072: Tale_04
+    400000: //RootNode
+    400002: EggplantOfTheDead
+    400004: Head
+    400006: HIPS
+    400008: L_feet01_IK
+    400010: L_feet02_IK
+    400012: L_Leg_IK
+    400014: L_rfl_ankle_IT
+    400016: L_rfl_Ball_IT
+    400018: L_rfl_heel_IT
+    400020: L_rfl_toe_IT
+    400022: L_ToothEnd
+    400024: Lfeet
+    400026: Lknee
+    400028: LLeg
+    400030: Ltooth
+    400032: Mouth1
+    400034: Mouth2
+    400036: R_feet01_IK
+    400038: R_feet02_IK
+    400040: R_Leg_IK
+    400042: R_rfl_ankle_IT
+    400044: R_rfl_Ball_IT
+    400046: R_rfl_heel_IT
+    400048: R_rfl_toe_IT
+    400050: R_ToothEnd
+    400052: Rfeet
+    400054: Rknee
+    400056: ROOT
+    400058: RReg
+    400060: Rtooth
+    400062: Spine_01
+    400064: Spine_02
+    400066: Tale_01
+    400068: Tale_02
+    400070: Tale_03
+    400072: Tale_04
+    4300000: EggplantOfTheDead
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: EggplantOfTheDead
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: EggplantOfTheDead
+        weight: 1
+      - path: L_rfl_ankle_IT
+        weight: 1
+      - path: L_rfl_ankle_IT/L_rfl_Ball_IT
+        weight: 1
+      - path: L_rfl_ankle_IT/L_rfl_Ball_IT/L_feet02_IK
+        weight: 1
+      - path: L_rfl_ankle_IT/L_rfl_Ball_IT/L_rfl_toe_IT
+        weight: 1
+      - path: L_rfl_ankle_IT/L_rfl_Ball_IT/L_rfl_toe_IT/L_feet01_IK
+        weight: 1
+      - path: L_rfl_ankle_IT/L_rfl_Ball_IT/L_rfl_toe_IT/L_rfl_heel_IT
+        weight: 1
+      - path: L_rfl_ankle_IT/L_rfl_Ball_IT/L_rfl_toe_IT/L_rfl_heel_IT/L_Leg_IK
+        weight: 1
+      - path: R_rfl_ankle_IT
+        weight: 1
+      - path: R_rfl_ankle_IT/R_rfl_Ball_IT
+        weight: 1
+      - path: R_rfl_ankle_IT/R_rfl_Ball_IT/R_feet02_IK
+        weight: 1
+      - path: R_rfl_ankle_IT/R_rfl_Ball_IT/R_rfl_toe_IT
+        weight: 1
+      - path: R_rfl_ankle_IT/R_rfl_Ball_IT/R_rfl_toe_IT/R_feet01_IK
+        weight: 1
+      - path: R_rfl_ankle_IT/R_rfl_Ball_IT/R_rfl_toe_IT/R_rfl_heel_IT
+        weight: 1
+      - path: R_rfl_ankle_IT/R_rfl_Ball_IT/R_rfl_toe_IT/R_rfl_heel_IT/R_Leg_IK
+        weight: 1
+      - path: ROOT
+        weight: 1
+      - path: ROOT/HIPS
+        weight: 1
+      - path: ROOT/HIPS/LLeg
+        weight: 1
+      - path: ROOT/HIPS/LLeg/Lknee
+        weight: 1
+      - path: ROOT/HIPS/LLeg/Lknee/Lfeet
+        weight: 1
+      - path: ROOT/HIPS/LLeg/Lknee/Lfeet/Ltooth
+        weight: 1
+      - path: ROOT/HIPS/LLeg/Lknee/Lfeet/Ltooth/L_ToothEnd
+        weight: 1
+      - path: ROOT/HIPS/Mouth1
+        weight: 1
+      - path: ROOT/HIPS/Mouth1/Mouth2
+        weight: 1
+      - path: ROOT/HIPS/RReg
+        weight: 1
+      - path: ROOT/HIPS/RReg/Rknee
+        weight: 1
+      - path: ROOT/HIPS/RReg/Rknee/Rfeet
+        weight: 1
+      - path: ROOT/HIPS/RReg/Rknee/Rfeet/Rtooth
+        weight: 1
+      - path: ROOT/HIPS/RReg/Rknee/Rfeet/Rtooth/R_ToothEnd
+        weight: 1
+      - path: ROOT/HIPS/Spine_01
+        weight: 1
+      - path: ROOT/HIPS/Spine_01/Spine_02
+        weight: 1
+      - path: ROOT/HIPS/Spine_01/Spine_02/Head
+        weight: 1
+      - path: ROOT/HIPS/Spine_01/Spine_02/Head/Tale_01
+        weight: 1
+      - path: ROOT/HIPS/Spine_01/Spine_02/Head/Tale_01/Tale_02
+        weight: 1
+      - path: ROOT/HIPS/Spine_01/Spine_02/Head/Tale_01/Tale_02/Tale_03
+        weight: 1
+      - path: ROOT/HIPS/Spine_01/Spine_02/Head/Tale_01/Tale_02/Tale_03/Tale_04
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
