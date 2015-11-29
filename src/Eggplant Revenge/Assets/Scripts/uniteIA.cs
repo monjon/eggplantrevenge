@@ -67,7 +67,7 @@ public class uniteIA : MonoBehaviour {
 	void Update () {
 
 		if (resistance <= 0) {
-			down += 0.05f;
+			down += 0.02f;
 			transform.Translate(0, -down, 0); 
 
 			if (transform.position.y < -4) {

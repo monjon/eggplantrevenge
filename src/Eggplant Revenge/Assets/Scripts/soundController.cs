@@ -19,13 +19,23 @@ public class soundController : MonoBehaviour {
 	public AudioClip tankReady;
 	public AudioClip tankFire;
 
+	private AudioSource sound ;
 	// Use this for initialization
 	void Start () {
-	
+		sound = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(uniteIA.showDamage){
+			sound.volume = 0.8f;
+//			Debug.Log("show");
+			sound.Play();
+			sound.clip = monsterExplosion;
+
+
+		}else{
+//			sound.Stop();
+		}
 	}
 }
